@@ -1,9 +1,12 @@
 {
-  "name": "weather-cli",
+  "name": "@sergey_23141/weather-cli-demo",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +24,11 @@
   },
   "bugs": {
     "url": "https://example.com",
-    "email": "https://example.com",
+    "email": "kurilovsergey15@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
   }
 }
